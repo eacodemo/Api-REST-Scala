@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E103] Syntax Error: /home/eacodemo/api_rest/src/main/scala/servicios/Main.scala:8:0 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0mprintln([31m"Hola mundo"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0mIllegal start of toplevel definition[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

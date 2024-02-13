@@ -1,0 +1,96 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.8 (Debian Java 11.0.18)
+[debug] Load.defaultLoad until apply took 106.420991ms
+[debug]           Load.loadUnit: plugins took 119.134427ms
+[debug]           Load.loadUnit: defsScala took 0.283426ms
+[debug] [Loading] Scanning directory /home/eacodemo/api_rest/project
+[debug]             Load.loadUnit: mkEval took 6.778342ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/eacodemo/api_rest/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 13.410509 ms
+[info] loading settings for project api_rest-build from plugins.sbt ...
+[debug]               Load.resolveProject(api_rest-build) took 46.567184ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id api_rest-build, base: /home/eacodemo/api_rest/project, plugins: List(<none>))) took 78.603391ms
+[debug] [Loading] Done in /home/eacodemo/api_rest/project, returning: (api_rest-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 590.943884ms
+[debug]           Load.loadUnit: cleanEvalClasses took 6.508379ms
+[debug]         Load.loadUnit(file:/home/eacodemo/api_rest/project/, ...) took 723.771475ms
+[debug]       Load.apply: load took 954.791463ms
+[debug]       Load.apply: resolveProjects took 7.008397ms
+[debug]       Load.apply: finalTransforms took 64.264752ms
+[debug]       Load.apply: config.delegates took 7.719298ms
+[debug]       Load.apply: Def.make(settings)... took 465.266744ms
+[debug]       Load.apply: structureIndex took 90.471904ms
+[debug]       Load.apply: mkStreams took 1.070884ms
+[info] loading project definition from /home/eacodemo/api_rest/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 2358.284973ms
+[debug]     Load.loadUnit: defsScala took 0.003335ms
+[debug] [Loading] Scanning directory /home/eacodemo/api_rest
+[debug]       Load.loadUnit: mkEval took 0.133356ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.typelevel.sbt.tpolecat.TpolecatPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(spray.revolver.RevolverPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbtassembly.AssemblyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.typelevel.sbt.tpolecat.TpolecatPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(spray.revolver.RevolverPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbtassembly.AssemblyPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,org.typelevel.sbt.tpolecat.TpolecatPlugin,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,sbtassembly.AssemblyPlugin,spray.revolver.RevolverPlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.730389 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 8.970709ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /home/eacodemo/api_rest, plugins: List(<none>))) took 11.759592ms
+[debug] [Loading] Done in /home/eacodemo/api_rest, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 66.739193ms
+[debug]     Load.loadUnit: cleanEvalClasses took 0.457077ms
+[debug]   Load.loadUnit(file:/home/eacodemo/api_rest/, ...) took 2426.704707ms
+[debug] Load.apply: load took 2451.216582ms
+[debug] Load.apply: resolveProjects took 0.12897ms
+[debug] Load.apply: finalTransforms took 11.947998ms
+[debug] Load.apply: config.delegates took 0.386126ms
+[debug] Load.apply: Def.make(settings)... took 82.034091ms
+[debug] Load.apply: structureIndex took 20.454295ms
+[debug] Load.apply: mkStreams took 0.00274ms
+[info] set current project to api_rest (in build file:/home/eacodemo/api_rest/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/eacodemo/.sbt/1.0/server/f49897f5441cc45f1deb/sock
+[debug] Writing bsp connection file
+[info] started sbt server
