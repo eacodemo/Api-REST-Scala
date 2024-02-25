@@ -35,8 +35,11 @@ lazy val root = (project in file("."))
       "org.typelevel" %% "cats-effect" % "3.5.3",
       "org.typelevel" %% "cats-effect-std" % "3.5.3",
       "org.typelevel" %% "cats-effect" % "3.5.3" % Test,
-      "org.typelevel" %% "cats-effect-testkit" % "3.5.3" % Test
-    ),
+      "org.typelevel" %% "cats-effect-testkit" % "3.5.3" % Test,
+      "io.circe" %% "circe-core" % "0.14.1",
+      "io.circe" %% "circe-generic" % "0.14.1",
+
+),
     assembly / assemblyMergeStrategy := {
       case "module-info.class" => MergeStrategy.discard
       case x => (assembly / assemblyMergeStrategy).value.apply(x)

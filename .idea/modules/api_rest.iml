@@ -31,6 +31,7 @@
     <orderEntry type="library" name="sbt: com.typesafe:config:1.4.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.zaxxer:HikariCP:5.0.1:jar" level="project" />
     <orderEntry type="library" name="sbt: io.circe:circe-core_3:0.14.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.circe:circe-generic_3:0.14.1:jar" level="project" />
     <orderEntry type="library" name="sbt: io.circe:circe-jawn_3:0.14.6:jar" level="project" />
     <orderEntry type="library" name="sbt: io.circe:circe-numbers_3:0.14.6:jar" level="project" />
     <orderEntry type="library" name="sbt: io.circe:circe-parser_3:0.14.5:jar" level="project" />
