@@ -1,9 +1,8 @@
-package servicios
 
 
-import cats.effect.{IO, IOApp}
+object Main {
+  def main(args: Array[String]): Unit = {
 
-object Main extends IOApp.Simple:
-  val run = Api_restServer.run[IO]
+  }
 
-
+}

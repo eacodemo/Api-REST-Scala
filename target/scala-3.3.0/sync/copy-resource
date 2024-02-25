@@ -1,1 +1,0 @@
-[[{"${BASE}/src/main/resources/logback.xml":["${BASE}/target/scala-3.3.0/classes/logback.xml"]},{"${BASE}/target/scala-3.3.0/classes/logback.xml":["${BASE}/src/main/resources/logback.xml"]}],{"${BASE}/src/main/resources/logback.xml":{"file":"file:///home/eacodemo/Api-REST-Scala/src/main/resources/logback.xml","lastModified":1708297648560}}]
