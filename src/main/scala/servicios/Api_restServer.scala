@@ -9,6 +9,7 @@ import org.http4s.ember.server.EmberServerBuilder
 import org.http4s.implicits.*
 import org.http4s.server.middleware.Logger
 
+
 object Api_restServer:
 
   def run[F[_]: Async: Network]: F[Nothing] = {
@@ -28,7 +29,7 @@ object Api_restServer:
 
       // With Middlewares in place
       finalHttpApp = Logger.httpApp(true, true)(httpApp)
-
+      
       _ <- 
         EmberServerBuilder.default[F]
           .withHost(ipv4"0.0.0.0")

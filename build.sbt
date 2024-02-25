@@ -19,6 +19,10 @@ lazy val root = (project in file("."))
       "org.scalameta"   %% "munit"               % MunitVersion           % Test,
       "org.typelevel"   %% "munit-cats-effect-3" % MunitCatsEffectVersion % Test,
       "ch.qos.logback"  %  "logback-classic"     % LogbackVersion,
+      "org.tpolecat" %% "doobie-hikari" % "1.0.0-RC4", // HikariCP transactor.
+      "org.tpolecat" %% "doobie-postgres" % "1.0.0-RC4",  // Postgres driver 42.6.0 + type mappings.
+      "com.github.pureconfig" %% "pureconfig-http4s" % "0.17.5",
+      "com.github.pureconfig" %% "pureconfig-cats" % "0.17.5",
     ),
     assembly / assemblyMergeStrategy := {
       case "module-info.class" => MergeStrategy.discard
