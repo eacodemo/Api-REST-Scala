@@ -1,4 +1,4 @@
-
+/**
 package object config {
   case class ServerConfig(host: String, port: Int)
   case class DatabaseConfig(driver: String, url: String, user: String, password: String, threadPoolSize: Int)
@@ -6,3 +6,4 @@ package object config {
   
 }
 
+*/

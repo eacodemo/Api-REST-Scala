@@ -1,5 +1,6 @@
 package servicios
 
+import org.http4s.dsl.io.*
 
 case class Port(number: Int) extends AnyVal
 
@@ -14,4 +15,5 @@ case class ServiceConf(
                         useHttps: Boolean,
                         authMethods: List[AuthMethod]
                       )
+
 

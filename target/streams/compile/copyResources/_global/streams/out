@@ -2,8 +2,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/logback.xml,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/logback.xml)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/aplication.conf,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/aplication.conf)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/flyway.conf,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/flyway.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V1_create_usuario.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V1_create_usuario.sql)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V2_create_proyecto.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V2_create_proyecto.sql)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V3_create_asociacionproyectousuario.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V3_create_asociacionproyectousuario.sql)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V4_historiausuario.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V4_historiausuario.sql)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V5_tareas.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V5_tareas.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V1__Create_Usuario.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V1__Create_Usuario.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V2__Create_Proyecto.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V2__Create_Proyecto.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V3__Create_Asociacion_Proyecto_Usuario.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V3__Create_Asociacion_Proyecto_Usuario.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V4__Create_Historia_Usuario.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V4__Create_Historia_Usuario.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/eacodemo/Api-REST-Scala/src/main/resources/db.migration/V5__Create_Tareas.sql,/home/eacodemo/Api-REST-Scala/target/scala-3.3.0/classes/db.migration/V5__Create_Tareas.sql)[0m

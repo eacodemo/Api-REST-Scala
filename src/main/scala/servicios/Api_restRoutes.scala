@@ -5,12 +5,11 @@ import org.http4s._
 import org.http4s.dsl.io._
 import org.http4s.circe.CirceEntityCodec._
 import cats.effect.IO
-import model.Usuario
-import repository.TodoRepository
 import doobie.implicits.toConnectionIOOps
 import org.http4s.circe.CirceEntityCodec.circeEntityDecoder
 import io.circe.generic.auto._
-
+import model.Usuario
+import repository.TodoRepository
 
 object UsuarioRoutes {
   def routes(transactor: HikariTransactor[IO]): HttpRoutes[IO] =
@@ -25,3 +24,4 @@ object UsuarioRoutes {
         }
     }
 }
+

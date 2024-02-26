@@ -1,9 +1,51 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Api_restRoutes.scala:6:41 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mimport[0m org.http4s.circe.CirceEntityCodec._[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                                         ^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                                         unused import[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Api_restRoutes.scala:7:28 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m[33mimport[0m org.http4s.implicits._[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                            ^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                            unused import[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Api_restRoutes.scala:28:44 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m  [33mdef[0m [36minsertUsuarioEndpoint[0m([36musuarioService[0m: [35mUsuarioService[0m): [35mHttpRoutes[0m[[35mIO[0m] =[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                            ^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                          Not found: type UsuarioService[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Api_restRoutes.scala:39:41 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m  [33mdef[0m [36mgetUsuarioEndpoint[0m([36musuarioService[0m: [35mUsuarioService[0m): [35mHttpRoutes[0m[[35mIO[0m] =[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                         ^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                         Not found: type UsuarioService[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Api_restRoutes.scala:47:37 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m47 |[0m    [33mclass[0m [35mUsuarioService[0m([36mtransactor[0m: [35mTransactor[0m[[35mIO[0m]) {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                     ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                     Not found: type Transactor[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Api_restRoutes.scala:52:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m        TodoRepository().getById(id).transact(transactor)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m        ^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m        value getById is not a member of repository.TodoRepository[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Api_restRoutes.scala:55:5 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m55 |[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m     ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     Required: org.http4s.HttpRoutes[cats.effect.IO][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Api_restServer.scala:28:19 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m    TodoRepository.insert(usuario).transact(transactor)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    value insert is not a member of object repository.TodoRepository[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Api_restServer.scala:31:19 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m    TodoRepository.getById(id).transact(transactor)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    value getById is not a member of object repository.TodoRepository[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Main.scala:9:29 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m9 |[0m      [33mval[0m [36musuarioEndpoints[0m = UsuarioEndpoints.insertUsuarioEndpoint(usuarioService)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                             ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                             Not found: UsuarioEndpoints[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /home/eacodemo/Api-REST-Scala/src/main/scala/servicios/Main.scala:11:47 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m      [33mval[0m [36mhttpApp[0m = usuarioEndpoints.orNotFound[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                               ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                          Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                          Required: cats.effect.IO[cats.effect.ExitCode][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m9 errors found[0m
