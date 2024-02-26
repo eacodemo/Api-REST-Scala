@@ -16,4 +16,3 @@ case class ServiceConf(
                         authMethods: List[AuthMethod]
                       )
 
-

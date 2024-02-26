@@ -1,7 +1,6 @@
-package db.database
+package db
 
-import cats.effect.IO
-import cats.effect.Resource
+import cats.effect.{IO, Resource}
 import doobie.hikari.HikariTransactor
 import doobie.util.ExecutionContexts
 import org.flywaydb.core.Flyway
