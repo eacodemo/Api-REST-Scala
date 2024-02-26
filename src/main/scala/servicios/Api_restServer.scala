@@ -1,18 +1,36 @@
 package servicios
 
 import org.http4s.dsl.io.*
+import cats.effect.*
+import db.Database
+import doobie.hikari.{Config => HikariConfig, HikariTransactor}
+import doobie.util.ExecutionContexts
+import org.http4s.implicits.*
+import org.http4s.blaze.server.BlazeServerBuilder
+import repository.TodoRepository
 
-case class Port(number: Int) extends AnyVal
+object HttpServer {
+  def create(configFile: String = "application.conf"): IO[ExitCode] = {
+    resources(configFile).use(create)
+  }
 
-sealed trait AuthMethod
-case class Login(username: String, password: String) extends AuthMethod
-case class Token(token: String) extends AuthMethod
-case class PrivateKey(pkFile: java.io.File) extends AuthMethod
+  private def resources(configFile: String): Resource[IO, Resources] = {
+    for {
+      config <- ServiceConf.load(configFile)
+      ec <- ExecutionContexts.fixedThreadPool[IO](config.database.threadPoolSize)
+      transactor <- Database.transactor(config.database, ec)
+    } yield Resources(transactor, config)
+  }
 
-case class ServiceConf(
-                        host: String,
-                        port: Port,
-                        useHttps: Boolean,
-                        authMethods: List[AuthMethod]
-                      )
+  private def create(resources: Resources): IO[ExitCode] = {
+    for {
+      _ <- Database.initialize(resources.transactor)
+      repository = new TodoRepository(resources.transactor)
+      exitCode <- BlazeServerBuilder[IO]
+        .bindHttp(resources.config.server.port.number, resources.config.server.host)
+        .withHttpApp(new TodoService(repository).routes.orNotFound).serve.compile.lastOrError
+    } yield exitCode
+  }
 
+  case class Resources(transactor: HikariTransactor[IO], config: ServiceConf)
+}

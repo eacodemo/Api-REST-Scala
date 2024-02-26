@@ -1,5 +1,0 @@
-package servicios
-
-class PersonService {
-
-}

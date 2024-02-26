@@ -10,5 +10,16 @@ class TodoRepository {
       .run
 }
 
+  def find(id: Int): ConnectionIO[Option[Usuario]] =
+    sql"SELECT * FROM Usuario WHERE ID = $id".query[Usuario].option
+
+  def update(usuario: Usuario): ConnectionIO[Int] =
+    sql"UPDATE Usuario SET nombreUsuario = ${usuario.nombreUsuario}, email = ${usuario.email}, contraseña = ${usuario.contraseña}, tipo = ${usuario.tipo} WHERE ID = ${usuario.ID}"
+      .update
+      .run
+
+  def delete(id: Int): ConnectionIO[Int] =
+    sql"DELETE FROM Usuario WHERE ID = $id".update.run
+}
 
 
