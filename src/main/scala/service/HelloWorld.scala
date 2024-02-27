@@ -1,4 +1,4 @@
-package servicios
+package service
 
 import cats.Applicative
 import cats.syntax.all.*

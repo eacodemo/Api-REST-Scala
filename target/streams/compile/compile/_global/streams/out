@@ -1,0 +1,59 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/AppRoutes.scala:8:2 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m  [33mdef[0m [36mhelloWorldRoutes[0m[[35mF[0m[_]: [35mSync[0m]([36mH[0m: [35mHelloWorld[0m[[35mF[0m]): [35mHttpRoutes[0m[[35mF[0m] =[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m  ^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m  indented definitions expected, def found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E103] Syntax Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/AppRoutes.scala:11:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m    HttpRoutes.of[[35mF[0m] {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    Illegal start of toplevel definition[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/HttpServer.scala:14:2 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m  [33mdef[0m [36mrun[0m[[35mF[0m[_]: [35mAsync[0m: [35mNetwork[0m]: [35mF[0m[[35mNothing[0m] = {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m  ^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  indented definitions expected, def found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/Main.scala:3:2 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m3 |[0m  [33mval[0m [36mrun[0m = HttpServer.run[[35mIO[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m  ^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m  indented definitions expected, val found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/service/HelloWorld.scala:10:2 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m  [33mdef[0m [36mhello[0m([36mn[0m: HelloWorld.Name): [35mF[0m[HelloWorld.Greeting][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m  ^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  indented definitions expected, def found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/service/HelloWorld.scala:13:2 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m  [33mfinal[0m [33mcase class[0m [35mName[0m([36mname[0m: [35mString[0m) [33mextends[0m [35mAnyVal[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m  ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  indented definitions expected, final found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/service/HelloWorld.scala:21:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m    given Encoder[Greeting] = [33mnew[0m Encoder[Greeting]:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    indented definitions expected, identifier given found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E103] Syntax Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/service/HelloWorld.scala:26:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m    given [[35mF[0m[_]]: [35mEntityEncoder[0m[[35mF[0m, [35mGreeting[0m] =[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    Illegal start of toplevel definition[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/service/HelloWorld.scala:30:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m    [33mdef[0m [36mhello[0m([36mn[0m: HelloWorld.Name): [35mF[0m[HelloWorld.Greeting] =[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    indented definitions expected, def found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/AppRoutes.scala:10:11 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m    [33mimport[0m dsl.*[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m           ^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m           Not found: dsl[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/AppRoutes.scala:10:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m    [33mimport[0m dsl.*[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    Line is indented too far to the right, or a `{` or `:` is missing[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/service/HelloWorld.scala:19:2 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m  [33mfinal[0m [33mcase class[0m [35mGreeting[0m([36mgreeting[0m: [35mString[0m) [33mextends[0m [35mAnyVal[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m  ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  Line is indented too far to the right, or a `{` or `:` is missing[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /home/dfurman/projects/github/Api-REST-Scala/src/main/scala/service/HelloWorld.scala:20:2 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m  [33mobject[0m [35mGreeting[0m:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m  ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  Line is indented too far to the right, or a `{` or `:` is missing[0m
+[0m[[0m[31merror[0m] [0m[0m13 errors found[0m
