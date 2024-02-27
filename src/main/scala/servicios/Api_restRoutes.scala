@@ -1,19 +1,18 @@
 package services
 
-import doobie.hikari.HikariTransactor
-import org.http4s._
-import org.http4s.dsl.io._
-import org.http4s.circe.CirceEntityCodec._
+import org.http4s.*
+import org.http4s.dsl.io.*
+import org.http4s.circe.CirceEntityCodec.*
 import cats.effect.IO
 import doobie.implicits.toConnectionIOOps
 import org.http4s.circe.CirceEntityCodec.circeEntityDecoder
-import io.circe.generic.auto._
+import io.circe.generic.auto.*
 import model.Usuario
-import repository.UsuarioRepositorio
+import repository.{UsuarioRepositorio, UsuarioRepositorioImpl}
 import doobie.util.transactor.Transactor
 
 class UsuarioService(transactor: Transactor[IO]) {
-  private val usuarioRepo = new UsuarioRepositorio
+  private val usuarioRepo: UsuarioRepositorio = new UsuarioRepositorioImpl
 
   val usuarioRoutes: HttpRoutes[IO] = HttpRoutes.of[IO] {
     case GET -> Root / "usuarios" =>
@@ -36,17 +35,3 @@ class UsuarioService(transactor: Transactor[IO]) {
       Ok(usuarioRepo.deleteById(id).transact(transactor))
   }
 }
-object UsuarioRoutes {
-  def routes(transactor: HikariTransactor[IO]): HttpRoutes[IO] =
-    HttpRoutes.of[IO] {
-      case req @ POST -> Root / "usuarios" =>
-        req.decode[Usuario] { usuario =>
-          UsuarioRepositorio().insert(usuario).transact(transactor).attempt.flatMap {
-            case Right(1) => Ok("Usuario insertado correctamente")
-            case Right(_) => InternalServerError("Error al insertar el usuario: No se pudo determinar el número de filas afectadas")
-            case Left(ex) => InternalServerError(s"Error al insertar el usuario: ${ex.getMessage}")
-          }
-        }
-    }
-}
-

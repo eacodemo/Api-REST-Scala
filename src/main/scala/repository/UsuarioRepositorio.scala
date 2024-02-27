@@ -3,7 +3,18 @@ package repository
 import doobie._
 import doobie.implicits._
 import model._
-class UsuarioRepositorio {
+
+// Interface for Usuario data getthering
+trait UsuarioRepositorio:
+  def insert(usuario: Usuario): ConnectionIO[Int]
+  def getAll: ConnectionIO[List[Usuario]]
+  def getById(id: Int): ConnectionIO[Option[Usuario]]
+  def update(usuario: Usuario): ConnectionIO[Int]
+  def deleteById(id: Int): ConnectionIO[Int]
+
+// This is an UsuarioRepositorio implementation
+// which is talking with DB/SQL
+class UsuarioRepositorioImpl extends UsuarioRepositorio {
   def insert(usuario: Usuario): ConnectionIO[Int] =
     sql"INSERT INTO Usuario (ID, nombreUsuario, email, contraseña, tipo) VALUES (${usuario.ID}, ${usuario.nombreUsuario}, ${usuario.email}, ${usuario.contraseña}, ${usuario.tipo})"
       .update
@@ -29,6 +40,3 @@ class UsuarioRepositorio {
       .update
       .run  
 }
-
-
-
