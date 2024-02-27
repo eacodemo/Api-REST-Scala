@@ -10,7 +10,32 @@ import org.http4s.circe.CirceEntityCodec.circeEntityDecoder
 import io.circe.generic.auto._
 import model.Usuario
 import repository.UsuarioRepositorio
+import doobie.util.transactor.Transactor
 
+class UsuarioService(transactor: Transactor[IO]) {
+  private val usuarioRepo = new UsuarioRepositorio
+
+  val usuarioRoutes: HttpRoutes[IO] = HttpRoutes.of[IO] {
+    case GET -> Root / "usuarios" =>
+      Ok(usuarioRepo.getAll.transact(transactor))
+
+    case GET -> Root / "usuarios" / IntVar(id) =>
+      Ok(usuarioRepo.getById(id).transact(transactor))
+
+    case req@POST -> Root / "usuarios" =>
+      req.decode[Usuario] { usuario =>
+        Created(usuarioRepo.insert(usuario).transact(transactor))
+      }
+
+    case req@PUT -> Root / "usuarios" =>
+      req.decode[Usuario] { usuario =>
+        Ok(usuarioRepo.update(usuario).transact(transactor))
+      }
+
+    case DELETE -> Root / "usuarios" / IntVar(id) =>
+      Ok(usuarioRepo.deleteById(id).transact(transactor))
+  }
+}
 object UsuarioRoutes {
   def routes(transactor: HikariTransactor[IO]): HttpRoutes[IO] =
     HttpRoutes.of[IO] {
